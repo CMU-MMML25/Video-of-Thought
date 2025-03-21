@@ -4,18 +4,18 @@
 
 # =================== Training ======================
 DATASET_NAME_LIST=(
-    ""
+    "STAR"
 )
 DATASET_NAME_LIST="${DATASET_NAME_LIST[@]}"
 
-LLM_MODEL_NAME="./pretrain_ckpt/vicuna-7b-v1.5"
-MM_MODEL_NAME="./pretrain_ckpt/clip"
+LLM_MODEL_NAME="LanguageBind/Video-LLaVA-7B-hf"  # "./pretrain_ckpt/vicuna-7b-v1.5"
+MM_MODEL_NAME="LanguageBind/Video-LLaVA-7B-hf"  #"./pretrain_ckpt/clip"
 
 echo "DATASET_NAME_LIST: $DATASET_NAME_LIST"
 echo "LLM_MODEL_NAME: $LLM_MODEL_NAME"
 echo "MM_MODEL_NAME: $MM_MODEL_NAME"
 
-deepspeed  --include localhost:0,2 --master_addr 127.0.0.1 --master_port 28460 train_mem.py \
+deepspeed  --include localhost:1,7 --master_addr 127.0.0.1 --master_port 28460 train_mem.py \
     --deepspeed ./scripts/zero2.json \
     --model_name_or_path $LLM_MODEL_NAME \
     --version v1 \

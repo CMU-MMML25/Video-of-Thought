@@ -1,0 +1,136 @@
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore MacOS system files
+.DS_Store
+__MACOSX/
+
+# PyCharm specific
+.idea/
+
+# General
+*.log
+*.tmp
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# JSON & Pickle Files (Common for Preprocessed Data & Annotations)
+*.json.gz
+*.pkl
+*.pickle
+*.msgpack
+
+# Large Data Files (Text, Image, Video, Scene Graphs, and Annotations)
+*.csv
+*.tsv
+*.json  # If you need some JSONs, remove this
+*.xml
+*.yaml
+*.yml
+*.h5
+*.hdf5
+*.npz
+*.npy
+*.mat
+
+# Model Checkpoints & Weights
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.hdf5
+*.joblib
+*.tflite
+*.pb
+*.bin
+*.pkl
+
+# Image Files (Annotations, Bounding Boxes, Scene Graphs)
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.tif
+*.gif
+*.svg
+*.ico
+
+# Video Files (Raw & Processed)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.webm
+*.flv
+*.wmv
+
+# Audio Files (if applicable)
+*.wav
+*.mp3
+*.aac
+*.ogg
+*.flac
+
+# Scene Graph Files
+*.dot
+*.graphml
+*.gml
+
+# Temporary & Cache Files
+__pycache__/
+*.pyc
+*.pyo
+*.ipynb_checkpoints/
+cache/
+logs/
+*.log
+*.out
+*.err
+
+# Experiment Outputs & Results
+*.csv
+*.tsv
+*.xlsx
+*.jsonl
+*.json.gz
+*.txt
+*.md
+
+# Hugging Face Datasets & Models
+hf_cache/
+datasets/
+*.huggingface/
+*.transformers_cache/
+
+# PyTorch & TensorFlow Generated Files
+wandb/
+mlruns/
+tensorboard/
+lightning_logs/
+*.pt.trace.json
+
+# Google Colab / Jupyter Notebook Specific
+.colab/
+.ipynb_checkpoints/
+
+# VS Code & Other IDEs
+.vscode/
+*.code-workspace
+
+# Miscellaneous
+*.bak
+*.orig
+*.rej
+
+# Ignore annotations & large datasets
+/data
+/cache_dir
+
+*.log
+*.err
+*.out

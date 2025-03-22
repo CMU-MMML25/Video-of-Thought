@@ -99,7 +99,6 @@ logs/
 *.jsonl
 *.json.gz
 *.txt
-*.md
 
 # Hugging Face Datasets & Models
 hf_cache/
